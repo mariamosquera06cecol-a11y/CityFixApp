@@ -1,5 +1,5 @@
 services:
-  cityfix:
+  expo-app:
     build: .
     container_name: cityfix
     dns:
@@ -8,4 +8,5 @@ services:
       - .:/app
       - /app/node_modules
     working_dir: /app
-    command: npm test
+    tty: true
+    command: tail -f /dev/null
