@@ -1,6 +1,12 @@
 import { jest, describe, test, expect } from '@jest/globals';
 import { getReports } from './reportEngine.js';
 
+
+process.env.SUPABASE_URL = ""
+process.env.SUPABASE_ANON_KEY = "";
+
+process.env.SUPABASE_KEY = "";
+
 jest.setTimeout(10000);
 
 describe('CityFix - Supabase E2E', () => {
